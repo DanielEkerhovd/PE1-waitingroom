@@ -19,7 +19,7 @@ body {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
     color: rgb(255, 255, 255);
     text-align: center;
 }
@@ -45,10 +45,38 @@ p {
 }
 
 .values p {
-    font-size: 2rem;
+    font-size: 5rem;
     letter-spacing: -2px;
 }
 
 .smaller {
-    font-size: 1.5rem;
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 2rem;
+    }
+
+    .values p {
+        font-size: 3rem;
+    }
+
+    .smaller {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    p {
+        font-size: 1.5rem;
+    }
+
+    .values p {
+        font-size: 2rem;
+    }
+
+    .smaller {
+        font-size: 1.5rem;
+    }
 }
