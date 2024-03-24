@@ -16,11 +16,15 @@ window.onload = function() {
     document.getElementById("minutes").innerHTML = `${minutes} <span class="smaller">Minutes</span>`
     document.getElementById("seconds").innerHTML = `${seconds} <span class="smaller">Seconds</span>`
 
+    document.title = `${days} days and counting`
+
     let start = setInterval(daysSinceGrade, 1000);
 
 }
 
 function daysSinceGrade() {
+
+
     
     let gradeDate = new Date(gradeDateSet).getTime();
     let now = new Date().getTime();
@@ -36,4 +40,6 @@ function daysSinceGrade() {
     document.getElementById("hours").innerHTML = `${hours} <span class="smaller">Hours</span>`
     document.getElementById("minutes").innerHTML = `${minutes} <span class="smaller">Minutes</span>`
     document.getElementById("seconds").innerHTML = `${seconds} <span class="smaller">Seconds</span>`
+
+    document.title = `${days} days and counting`
 }
